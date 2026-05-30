@@ -18,12 +18,10 @@ const FREE_MAX_LENGTH = 200;
 const FREE_MAX_SERIES = 1;
 const FREE_FORMATS: OutputFormat[] = ["json"];
 
-// Gumroad product IDs (public identifiers, safe to ship). PLACEHOLDERS:
-// replace with the real TimeWeaver product IDs after creating the Gumroad
-// products (same flow as SeedWeaver).
+// Gumroad product ID (public identifier, safe to ship). Single one-time
+// product: "TimeWeaver Pro" ($19).
 const PRODUCT_IDS = [
-  "REPLACE_WITH_TIMEWEAVER_MONTHLY_ID",
-  "REPLACE_WITH_TIMEWEAVER_LIFETIME_ID",
+  "-gDdK_drCEy9HXY0vuTRwQ==", // TimeWeaver Pro ($19 one-time)
 ];
 
 const PRO_URL = "https://fixtureforge.gumroad.com/l/timeweaver";

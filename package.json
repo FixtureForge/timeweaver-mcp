@@ -1,6 +1,6 @@
 {
   "name": "timeweaver-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "mcpName": "io.github.FixtureForge/timeweaver-mcp",
   "description": "Synthetic time-series test data generator MCP server. Realistic series with trend, seasonality, noise, anomalies, and multiple correlated streams — for testing dashboards, monitoring, forecasting and anomaly detection. For Claude, Cursor, and any MCP client.",
   "keywords": [
