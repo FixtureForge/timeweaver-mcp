@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.env
+.env.*
+.npmrc
+*.tgz
+test.mjs
+mcp-publisher.exe
+mcp-publisher.tar.gz

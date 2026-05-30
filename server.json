@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.FixtureForge/timeweaver-mcp",
+  "description": "Synthetic time-series test data with trend, seasonality, noise, and anomalies, for any MCP client.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/FixtureForge/timeweaver-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "timeweaver-mcp",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}

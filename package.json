@@ -1,0 +1,40 @@
+{
+  "name": "timeweaver-mcp",
+  "version": "0.1.0",
+  "mcpName": "io.github.FixtureForge/timeweaver-mcp",
+  "description": "Synthetic time-series test data generator MCP server. Realistic series with trend, seasonality, noise, anomalies, and multiple correlated streams — for testing dashboards, monitoring, forecasting and anomaly detection. For Claude, Cursor, and any MCP client.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "test-data",
+    "time-series",
+    "synthetic-data",
+    "mock-data",
+    "anomaly-detection",
+    "forecasting",
+    "dashboard",
+    "claude",
+    "cursor"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "timeweaver-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}

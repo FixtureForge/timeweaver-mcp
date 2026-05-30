@@ -1,0 +1,20 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      timeweaverLicense:
+        type: string
+        title: "TimeWeaver Pro license key"
+        description: "Optional. Provide your Pro license key to unlock long series, multiple correlated series, anomalies, AR(1) noise, and CSV/SQL output. Leave blank for the free tier."
+    required: []
+  commandFunction: |-
+    (config) => ({
+      command: "npx",
+      args: ["-y", "timeweaver-mcp"],
+      env: config.timeweaverLicense
+        ? { TIMEWEAVER_LICENSE: config.timeweaverLicense }
+        : {}
+    })
+  exampleConfig:
+    timeweaverLicense: ""
